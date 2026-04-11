@@ -17,7 +17,7 @@ jobs:
           
       - name: Install and Build
         run: |
-          npm ci
+          npm install --os=linux --cpu=x64
           npm run generate
           
       - name: Deploy to Firebase
