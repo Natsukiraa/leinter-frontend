@@ -22,7 +22,7 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   runtimeConfig: {
     public: {
-      apiBaseUrl: 'http://localhost:8080',
+      apiBaseUrl: 'https://api-leitner-656412307077.europe-west1.run.app',
     }
   },
   app: {
