@@ -1,75 +1,23 @@
-# Nuxt Minimal Starter
+# Clean Code
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Membres de l'équipe
+- GAZIO Maladie (Maël) 🦠
+- PHE Lina 🐱
+- TECHER Mathis 🤖
 
-## Setup
+## Déploiement du projet
 
-Make sure to install dependencies:
+### Prérequis
+- Aucun
 
-```bash
-# npm
-npm install
+### Variables d'environnement
+| Nom de la variable | Description |
+|--------------------|-------------|
+| `NUXT_PUBLIC_API_BASE_URL`    | URL de base de l'API utilisée par le frontend. |
 
-# pnpm
-pnpm install
 
-# yarn
-yarn install
+### Déploiement
 
-# bun
-bun install
-```
+Les déploiements sont réalisés automatiquement via une Github Action à chaque push sur la branche `main`. Le projet est hébergé sur Firebase Hosting.
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+L'URL de l'API peut être configurée dynamiquement via la variable GitHub Actions `NUXT_PUBLIC_API_BASE_URL` (Settings → Secrets and variables → Actions → Variables).
